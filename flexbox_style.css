@@ -1,0 +1,147 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.container{
+    display: -webkit-flex; /*поддержка ранних версий браузеров*/
+    -webkit-flex-wrap: nowrap; /*ранние версии браузеров*/
+    display: flex;
+    width: 600px;
+    height: 320px;  
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 27%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    border: 2px solid black;
+    
+    
+
+}
+.container:hover .b{order:4;}
+.container:hover .cap_up{ order:-1;}
+.container:active .cap_up{order:3}
+.container:active .glass_down .cap{  
+    order:-2; 
+    transform: translate(170px,170px) rotate(540deg); 
+    transition: 1.5s;
+}
+.container:active .glass_down .cap_2{  
+    
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transition: 1s;
+    margin-top:0%; 
+}
+.container:active .glass_down{
+    transition: 3s;
+    filter:blur(1px);
+}
+.b{
+    width: 100%;
+    height: 100%;
+}
+.b .cap{
+    margin-top: 7%;
+    margin-left: 14%;
+
+}
+.cap_up{
+    width: 100%;
+    height: 100%;
+}
+.cap_up .cap{
+    margin-bottom: -12%;
+    margin-left: 23%;
+    transform:rotate(0deg);
+    transition:2s;
+    
+}
+.cap_up:hover .cap{
+    
+    transform: rotate(30deg);
+    margin-left: 35%; 
+   
+}
+.cap_up:hover{
+    animation:spin 1s infinite alternate linear;
+    animation-delay: 1s;
+    transition: 0.9s;
+}
+
+.cap_up:hover p{
+    opacity: 1;
+}
+
+.glass_down .cap{
+    position: relative;
+    margin-top: -10%;
+    margin-left: 44%;
+    transform:rotate(30deg);
+    transition: 1s;
+}
+.cap_up p{
+    margin-top:-30%;
+    margin-left: 45%;
+    font-size: 140%;
+    font-weight: bold;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    opacity: 0;
+}
+.glass_down{
+    width: 100%;
+    height: 100%;
+}
+.glass_down .cap_2{
+    margin-left:17%;
+    margin-top: -22%;
+    opacity: 1;
+}
+.object {
+    position: relative;
+    transition: all 0.5s linear;
+    -webkit-transition: all 1s linear; /** Chrome & Safari **/
+    -moz-transition: all 0.5s linear; /** Firefox **/
+    -o-transition: all 0.5s linear; /** Opera * */
+}
+.glass_down p{
+    margin-top:15%;
+    margin-left: 25%;
+    font-size: 140%;
+    font-weight: bold;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+   
+}
+
+@-webkit-keyframes spin {
+    from{
+        transform: rotate(-30deg);
+    }
+    to{
+        transform: rotate(30deg);
+    }
+  }
+ 
+    .spin:hover,
+    .spin:focus {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5s;
+    -webkit-transform-origin:10% 20%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+ 
+    }
+    
+
+
+ 
+
+
+
