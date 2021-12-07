@@ -1,0 +1,51 @@
+.krug{
+    height: 92px;
+    width: 92px;
+    margin-top: 2.3%;
+    margin-left: 2%;
+    border: 2.5px solid black;
+    border-radius: 100%;
+    background-color: rgb(219, 220, 241);
+}
+.wp_1{
+    position: relative;
+    height: 45%;
+    width: 3.5%;
+    top:25%;
+    left:28%;
+    background:black;
+}
+.wp_2{
+    position:relative;
+    height: 45%;
+    width: 3.5%;
+    top:-20%;
+    left:55%;
+    background:black;
+}
+.wp_3{
+    position:relative;
+    height: 3.5%;
+    width: 30.5%;
+    bottom:67%;
+    left:28%;
+    background:black; 
+}
+.wr_1{
+    position:relative;
+    height: 44%;
+    width: 3.9%;
+    bottom: 50%;
+    left: 45%;
+    background:black; 
+}
+.wr_2{
+    position:relative;
+    height: 30%;
+    width: 22%;
+    bottom: 94%;
+    left: 46%;
+    border: 3.5px solid black;
+    border-radius: 0 100% 100% 0/ 0 50% 50% 0; 
+
+}
